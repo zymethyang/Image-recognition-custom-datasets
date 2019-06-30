@@ -47,6 +47,6 @@ feed_dict_testing = {x: x_batch, y_true: y_test_images}
 result=sess.run(y_pred, feed_dict=feed_dict_testing)
 # result is of this format [probabiliy_of_rose probability_of_sunflower]
 if result[0][0] > result[0][1]:
-    print("Apple")
+    print("Apple {}%".format(result[0][0]*100))
 else:
-    print("Banana")
+    print("Banana {}%".format(result[0][1]*100))
