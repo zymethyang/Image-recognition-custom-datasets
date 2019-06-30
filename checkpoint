@@ -1,0 +1,2 @@
+model_checkpoint_path: "apple-banana-model"
+all_model_checkpoint_paths: "apple-banana-model"
